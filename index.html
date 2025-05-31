@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Evaluating mathematical reasoning of foundation models in visual contexts">
+  <meta name="keywords" content="MathVista, Math Vista">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> FocusDiff</title>
+
+  <link rel="icon" href="static/images/focus.png">
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="stylesheet" href="./static/css/leaderboard.css">
+
+  <script type="text/javascript" src="static/js/sort-table.js" defer></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/explorer-index.js"></script>
+  <script src="./static/js/question_card.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title is-bold">
+            <img src="static/images/focus.png" style="width:1em;vertical-align: middle" alt="Logo"/>
+            <span class="mathvista" style="vertical-align: middle">FocusDiff</span>
+            </h1>
+          <h2 class="subtitle is-3 publication-subtitle">
+            Advancing Fine-Grained Text-Image Alignment for Autoregressive Visual Generation
+          </h2>
+          <div class="is-size-5 publication-authors">
+            <!-- <span class="author-block">Anonymous</span> -->
+
+           <span class="author-block">
+            <a href="None">Kaihang Pan</a><sup style="color:#6fbf73;">1</sup><sup>*</sup>,</span>
+           <span class="author-block">
+             <a href="None">Wendong Bu</a><sup style="color:#6fbf73;">1</sup><sup>*</sup>,</span>
+           <span class="author-block">
+             <a href="None">Yuruo Wu</a><sup style="color:#6fbf73;">1</sup><sup>*</sup>,</span>
+           <span class="author-block">
+             <a href="None">Yang Wu</a><sup style="color:#ffac33;">2</sup>,</span>
+           <span class="author-block">
+             <a href="None">Kai Shen</a><sup style="color:#ac33ff;">3</sup>,</span> 
+           <span class="author-block">
+            <a href="None">Yunfei Li</a><sup style="color:#ffac33;">2</sup>,</span><br>
+           <span class="author-block">
+            <a href="None">Hang Zhao</a><sup style="color:#ffac33;">2</sup>,</span>
+           <span class="author-block">
+              <a href="None">Juncheng Li</a><sup style="color:#6fbf73;">1</sup>,</span>
+          <span class="author-block">
+            <a href="">Siliang Tang</a><sup style="color:#6fbf73;">1</sup>,</span>
+          <span class="author-block">
+            <a href="">Yueting Zhuang</a><sup style="color:#6fbf73;">1</sup></span>
+          </div>
+         <div class="is-size-5 publication-authors">
+           <span class="author-block"><sup style="color:#6fbf73;">1</sup>Zhejiang University,</span>
+           <span class="author-block"><sup style="color:#ffac33">2</sup>Ant Group,</span>
+           <span class="author-block"><sup style="color:#ac33ff">3</sup>Moontshot AI</span> <br>
+
+          <span class="author-block"><sup>*</sup>Equal Contribution</span><br>
+           
+        </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code (Wait)</span>
+                  </a>
+              </span>
+              <br>
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <!-- <i class="far fa-images"></i> -->
+                      <p style="font-size:18px">🤗</p>
+                      <!-- 🔗 -->
+                  </span>
+                  <span>Checkpoint (Wait)</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <!-- <i class="far fa-images"></i> -->
+                      <p style="font-size:18px">🤗</p>
+                      <!-- 🔗 -->
+                  </span>
+                  <span>PairComp (Wait)</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <!-- <i class="far fa-images"></i> -->
+                      <p style="font-size:18px">🤗</p>
+                      <!-- 🔗 -->
+                  </span>
+                  <span>FocusDiff-Data (Wait)</span>
+                </a>
+              </span>
+              
+            </div>
+
+          </div>
+          
+          
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container" style="margin-bottom: 1vh;">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Introduction</h2>
+        <div class="content has-text-justified">
+          <p>
+            Recent studies extend the autoregression paradigm to text-to-image generation, achieving performance comparable to diffusion models. However, our new PairComp benchmark -- featuring test cases of paired prompts with similar syntax but different fine-grained semantics -- reveals that existing models struggle with fine-grained text-image alignment thus failing to realize precise control over visual tokens. To address this, we propose FocusDiff, which enhances fine-grained text-image semantic alignment by focusing on subtle differences between similar text-image pairs. We construct a new dataset of paired texts and images with similar overall expressions but distinct local semantics, further introducing a novel reinforcement learning algorithm to emphasize such fine-grained semantic differences for desired image generation. Our approach achieves state-of-the-art performance on existing text-to-image benchmarks and significantly outperforms prior methods on PairComp.
+          </p>
+         
+        </div>        
+      </div>
+    </div>
+    <!--/ Abstract. -->
+</div>
+</section>
+
+<section class="hero is-light is-small">
+  <div class="hero-body has-text-centered">
+  <h1 class="title is-1 mathvista">
+            <span class="mathvista">framework</span>
+  </h1>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered m-6">
+      
+      <div class="content has-text-justified">
+        <div style="display: grid; place-items: center;">
+        <img src="static/images/intro.png" alt="arithmetic reasoning" width="80%"/><br>
+        </div>
+        <p><img src="static/images/focus.png" style="width:1.0em;vertical-align: middle" alt="Logo"/><span class="mathvista">FocusDiff</span> addresses the challenge of fine-grained semantic control in AR-based image generation. While AR models excel in capturing global semantics, they often struggle with subtle distinctions. And <img src="static/images/focus.png" style="width:1.0em;vertical-align: middle" alt="Logo"/><span class="mathvista">FocusDiff</span> enhances text-to-image alignment through two main innovations:</p>
+        <b>1. FocusDiff-Data:</b> A curated dataset of paired prompts and images with subtle semantic variations.
+        <br><br>
+        <!-- <div style="display: grid; place-items: center;"> -->
+          <div style="display: grid; place-items: center;">
+        <img src="static/images/case.png" alt="arithmetic reasoning" width="90%"/><br></div>
+        <p><b>2. Pair-GRPO:</b> A novel RL algorithm extending Group Relative Policy Optimization to emphasize fine-grained semantic differences during training.</p>
+        <div style="display: grid; place-items: center;">
+        <img src="static/images/grpo.png" alt="arithmetic reasoning" width="48%"/><br></div>
+        <!-- </div> -->
+        <p>
+        On this basis, we propose a new benchmark, i.e., <span class="mathvista">PairComp</span>. Each test case in <span class="mathvista">Paircomp</span> contains two similar prompts with subtle differences. By comparing the accuracy of the images generated by the model for each prompt, we evaluate whether the model has focused on the fine-grained semantic differences in the prompts to produce the corresponding correct images. The two prompts in a test case exhibit word-level differences that lead to noticeable distinctions in certain fine-grained semantic aspects. As shown in following figure, these differences can be categorized into six types: (1) Overall appearance difference; (2) Color difference; (3) Counting difference; (4) Position difference; (5) Style & Tone difference; (6) Text difference.
+        </p>
+        <br>
+        <div style="display: grid; place-items: center;">
+        <img src="static/images/benchmark.png" alt="arithmetic reasoning" width="90%"/><br></div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="hero is-light is-small">
+  <div class="hero-body has-text-centered">
+  <h1 class="title is-1 mathvista">
+            <span class="mathvista">Main Results</span>
+  </h1>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered m-6">
+      
+      <div class="column is-full has-text-centered content">
+        <h2 class="title is-3">Automated Metric Evaluation</h2>
+        <div class="content has-text-justified">
+        <p>We employ Janus-Pro as the backbone, developing <img src="static/images/focused.png" style="width:1.0em;vertical-align: middle" alt="Logo"/><span class="mathvista">Janus-FocusDiff</span>, excelling in text-to-image generation, with improved capabilities of vision-language alignment. The comparison
+          results against both diffusion-based and MLLM-based methods on PairComp, GenEval, T2I-CompBench, and DPG-Bench are presented in the following two Tables. </p>
+      </div>
+      <!-- <img src="static/images/t2i.png" alt="arithmetic reasoning" width="90%"/><br> -->
+      <img src="static/images/res1.png" alt="arithmetic reasoning" width="80%"/><br><br>
+      <img src="static/images/res2.png" alt="arithmetic reasoning" width="80%"/><br>
+      
+      <h2 class="title is-3">Qualitative Examples</h2>
+      <div class="content has-text-justified">
+      <p>We also present a direct qualitative comparison between <img src="static/images/focused.png" style="width:1.0em;vertical-align: middle" alt="Logo"/><span class="mathvista">Janus-FocusDiff-7B</span> and Janus-Pro-7B on pairs of similar prompts with fine-grained semantic differences. For each prompt, we ask each model to generate two images.  We can see that Janus-Pro-7B struggles to precisely control the fine-grained requirements of similar prompts.  Moreover, even for the same prompt, the generated images are not consistently aligned with the target semantics.  In contrast, our <img src="static/images/focused.png" style="width:1.0em;vertical-align: middle" alt="Logo"/><span class="mathvista">Janus-FocusDiff-7B</span> is capable of accurately capturing the fine-grained semantic differences between prompts to generate corresponding images, and stably produces high-quality images that meet the specified requirements.</p></div>
+      <img src="static/images/casestudy1.png" alt="arithmetic reasoning" width="90%"/><br>
+      <img src="static/images/casestudy2.png" alt="arithmetic reasoning" width="90%"/><br><br>
+      <div class="content has-text-justified">
+      <p><img src="static/images/focused.png" style="width:1.0em;vertical-align: middle" alt="Logo"/><span class="mathvista">Janus-FocusDiff</span> can further generate images that more accurately match counterfactual prompts which are rarely found in the real world. For instance, given the prompt ''square watermelon'', Janus-pro-7B still generates a round one. 
+        In contrast, our <img src="static/images/focused.png" style="width:1.0em;vertical-align: middle" alt="Logo"/><span class="mathvista">Janus-FocusDiff-7B</span> successfully generates a watermelon with this counterfactual shape. 
+        This indicates that we effectively mitigate the issue of hallucination generation, eliminating the erroneous bias towards the training distribution.</p></div>
+        <img src="static/images/cf.png" alt="arithmetic reasoning" width="70%"/>
+      <!-- <img src="static/images/compareemu3.png" alt="arithmetic reasoning" width="90%"/><br> -->
+    </div>
+  </div>
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title is-3 has-text-centered">BibTeX</h2>
+    <pre><code>
+     
+    </code></pre>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="content has-text-centered">
+  </div>
+  <div class="columns is-centered">
+    <div class="column is-8">
+      <div class="content">
+<p style="font-size: 14px;">
+This website is adapted from  <a href="https://ddt-llama.github.io/">DDT-LLaMA</a>, licensed under a <a rel="license"
+                                            href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+Commons Attribution-ShareAlike 4.0 International License</a>.
+</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>
